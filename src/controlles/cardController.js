@@ -40,7 +40,7 @@ const createCard = async function(req,res){
       )
       const sub = await counterModel.findOne({cardNumber:"autoval"}).select({_id:0,seq:1} )
       
-      data.cardNumber = ("C"+sub.seq)
+      data.cardNumber = ("C00"+sub.seq)
       //==========================================================================================================================================//
 
 
